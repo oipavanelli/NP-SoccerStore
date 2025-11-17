@@ -1,0 +1,314 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    padding-top: 2px;
+}
+header {
+    background-color:#eeeded;
+    color: #fff;
+    padding: 0px 0;
+    height: 34px;  
+    max-width: 100%;
+    position: fixed; /* Torna o cabeçalho fixo no topo */
+    width: 100%; /* Faz com que o cabeçalho tenha a largura total */
+    top: 0; /* Fixa o cabeçalho no topo da página */
+    z-index: 1000; 
+    
+}
+.header2 {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #fff;
+    padding: 0;
+    height: 65px;
+    margin-top: 34px;
+    position: fixed; /* Torna o cabeçalho fixo no topo */
+    width: 100%; /* Faz com que o cabeçalho tenha a largura total */
+    top: 0; /* Fixa o cabeçalho no topo da página */
+    z-index: 1000;
+}
+
+.menu-itens {
+    display: flex;
+    margin-right: 20px;
+    column-gap: 9%;
+    width: 20%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.line {
+    position: fixed; /* Torna a linha fixa no topo */
+    width: 100%;
+    top: 99px; /* Ajuste a altura em pixels para definir a distância a partir do topo */
+    height: 1px; /* Altura da linha */
+    background-color: #dcdcdc; /* Cor da linha */
+    /* Certifique-se de que a linha esteja abaixo do cabeçalho principal */
+}
+.logo {
+    width: 100px;
+    float: left;
+    margin-left: 30px;
+    margin-top: -9px;
+}
+.logo img {
+    width: 70px;
+    height: 60px;
+    padding-top: 1px;
+}
+
+.menu {
+    width: 60%;
+    margin-left: 0px;; /* Adicione o espaço à esquerda para acomodar a logo */
+    padding-top:6px;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content:left;
+    text-align:center;
+}
+
+.menu ul li {
+    margin-right: 20px;
+    position: relative;
+    padding-top: 11px;
+}
+
+.menu ul li a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    top: 0px;
+    font-size: 17px;
+}
+
+.menu ul li.parent {
+    position: relative;
+}
+
+/* Aplique a linha hover apenas ao menu pai */
+.menu ul li.parent::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: #1df68d;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu ul li.parent:hover::before {
+    width: 99%;
+
+}
+
+.submenu-content {
+    position: absolute;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 5px;
+    top: 100%;
+    left: -5px;
+    width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu ul li.parent:hover .submenu-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu-content a {
+    color: #fff; /* Cor do texto no submenu */
+    text-decoration: none;
+}
+.submenu-content a::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px; /* Ajuste a altura da linha conforme necessário */
+    bottom: 0; /* Posiciona a linha abaixo do texto */
+    left: 4px;
+    background-color: #000; /* Cor da linha */
+    transform: scaleX(0); /* Inicialmente, a linha estará oculta */
+    transform-origin: center;
+}
+
+
+.submenu-content ul {   
+    list-style: none; 
+    padding: 0; 
+    margin: 0;/* Remova as margens padrão da lista */
+    text-align: left;
+}
+
+.submenu-content li {   
+    width: calc(50% - 10px); /* Duas colunas (50%) com espaço entre elas */
+    margin: 0 0px 10px 0;
+    display: block; 
+}
+.submenu-content li:nth-child(2n) {
+    margin-right: 0;
+}
+.search-bar {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    margin-left: 50px;
+    margin-top: 2px;
+    position: relative;
+}
+.barra-pesquisa-div {
+    display: flex;
+    width: 20%;
+    margin: 90px 0;
+}
+.barra-busca {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    border: none; 
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    outline: none;
+    color: #000;
+}
+
+.barra-busca::placeholder{
+  color:#a9a9;
+}
+
+.botao-pesquisa {
+    background: transparent; /* Cor do botão */
+    color: #000; /* Cor do texto no botão */
+    border: none;
+    border-radius: 4px;
+    padding: 17px 0px;
+    cursor: pointer;
+}
+.icon-cadastro {
+    position: ;
+    top: 19px; 
+    right: 40px;  
+    color: #000; 
+    font-size: 28px; 
+    cursor: pointer;
+
+}
+.icon-carrinho {
+    position: ;
+    top: 19px; 
+    right: 90px;  
+    color: #000; 
+    font-size: 28px; 
+    cursor: pointer;
+}
+
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      justify-items: center;
+    }
+
+    .product {
+      width: 323px;
+      height: 483px;
+      border:2px solid #000
+      padding: 13px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #fff;
+      text-align:left ;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      padding-left:19px;
+      margin:5px;
+      
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .product img {
+      max-width: 105%;
+      height: auto;
+      margin-left: -17px;
+    }
+
+    .product h3 {
+      margin-top: 0;
+      color: black;
+      font-size: 26px;
+      margin-left:-14px;
+    }
+
+    .product p {
+      margin-bottom: -1px;
+      color: #555;
+      font-size: 1rem;
+      margin-left:-14px;
+    }
+    .product-details {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .product-price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ff6600;
+      margin-top: 10px;
+    }
+    .preco
+    {
+        font-size: 23px;
+        margin-left:-14px;
+    }
+    .produtos
+    {
+        display:flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+        margin-left: 6px;
+    }
+    
+    .center{
+        text-align: center;
+        height:10%;
+        color:grey;
+        padding-top: 5px; 
+    }
+    footer{
+        background-color:#1df68d;
+        height: 60px;
+        text-align: center;
+    }

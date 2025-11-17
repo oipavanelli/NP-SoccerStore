@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs-container {
+    max-width: 420px;
+    margin-left: 750px;
+    justify-content: space-between;
+    display: grid;
+}
+
+.tab {
+    flex-basis: 45%;
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+.tab-content {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content2 {
+    margin-top:-13px;
+}
+
+label {
+    display: inline-table;
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: inline-block;
+    width: 370px; /* Largura das labels (ajuste conforme necessário) */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: ; /* Adicione uma cor de hover aqui */
+}
+
+.toggle-button:hover {
+    color: #0000FF;
+}
+
+.tabs-nav {
+    list-style-type: none;
+    margin-right: px;
+    margin: 35px;
+}
+
+.tabs-nav li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tabs-nav li.active {
+    background-color: #ddd;
+}
+
+.tabs-nav li:hover {
+    background-color: #ccc;
+}
+
+.menu-text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+}
+
+.tlogin {
+    text-align: center;
+    font-family: Arial;
+    color: #0094FF;
+}
+
+.button {
+    margin-left: px; /* Adicione um valor de margem aqui */
+    margin-top: -100px;
+}
+
+input[type="file"] {
+    display: inline; /* Correção: display deve ser "inline" */
+    /* color: ; */ /* Remova esta linha */
+}
+
+
+input[type="radio"] {
+    display: inline; /* Correção: display deve ser "inline" */
+    margin-right: 8px; /* Espaçamento entre as caixas de seleção (ajuste conforme necessário) */
+    margin-bottom: 9px;
+}
+
+.containert {
+    display: flex;
+    
+  }
+
+  .column {
+    width: 190px; /* Ajuste conforme necessário para margens e espaçamento */
+  }
+
+.radiob{
+    display:flex;
+}
+
+  

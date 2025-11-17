@@ -1,0 +1,180 @@
+
+.tabs-container {
+    max-width: 420px;
+    margin-left: 750px;
+    justify-content: space-between;
+    display: grid;
+}
+
+.tab {
+    flex-basis: 45%;
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+.tab-content {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.tab-content2{
+    margin-top: 100px;
+}
+.tab-content3 {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #1df68d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: ;
+    transition: background-color 0.3s ease;
+    border-color: #1df68d;
+}
+
+input[type="submit"]:hover {
+    background-color: #0AB663;
+}
+
+.toggle-button:hover {
+    color: #0000FF;
+}
+
+.tabs-nav {
+    list-style-type: none;
+    margin-right: px;
+    margin: 35px;
+}
+
+.tabs-nav li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tabs-nav li.active {
+    background-color: #ddd;
+}
+
+.tabs-nav li:hover {
+    background-color: #ccc;
+}
+
+.menu-text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+}
+
+.tlogin {
+    text-align: center;
+    font-family: Arial;
+    color: #1df68d;
+}
+
+.create-account-button {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #1df68d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: ;
+    transition: background-color 0.3s ease;
+    border-color: #1df68d;
+    margin-top: 40.9px;
+    margin-left: 201.7px;
+}
+
+.create-account-button:hover {
+    background-color: #0AB663;
+}
+
+.create-admin-button {
+    display: none;
+    border-radius: 20px;
+    background-color: #1df68d;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-color: #1df68d;
+}
+
+.create-admin-button:hover {
+    background-color: #0AB663;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #1df68d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: ;
+    transition: background-color 0.3s ease;
+    border-color: #1df68d;
+    margin-top: -37.9px;
+    margin-left: 8px;
+}
+
+.button-link:hover {
+    background-color: #0AB663;
+}
+
+.button-link2 {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #1df68d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: ;
+    transition: background-color 0.3s ease;
+    border-color: #1df68d;
+    margin-top: -37.9px;
+    margin-left: -42px;
+}
+
+.button-link2:hover {
+    background-color: #0AB663;
+}
+
+.bai
+{
+    margin-left:1029px;
+    margin-top:-113px;
+}
