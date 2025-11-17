@@ -1,0 +1,14 @@
+pop-up de cadastro (correto e incorreto)
+pop-up de login (correto e incorreto)
+criar favorito nas camisas - pop-up de favoritado
+botão para desconectar
+
+pop-up de cadastro admin (correto e incorreto)
+pop-up de login admin (correto e incorreto)
+criar tabela para editar/criar /deletar imagens no banco de dados
+
+
+Algoritmo que faça gravar imagem que converta Imagem dentro do banco de dados
+
+
+
